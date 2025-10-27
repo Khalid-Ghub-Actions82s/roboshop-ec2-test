@@ -5,7 +5,7 @@ variable "instance_type" {
     default = "t3.micro"
 }
 variable "sg_ids"{
-    default = "sg-008d92830335a0906"
+    default = ["sg-008d92830335a0906"]
   
 }
 variable "tags" {

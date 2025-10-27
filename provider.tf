@@ -1,9 +1,11 @@
 terraform {
 
-required_providers {
-  source = "hashicorp/aws"
-  version = "6.18.0"
-}
+  required_providers {
+    aws = {
+     source = "hashicorp/aws"
+     version = "6.18.0"
+       }
+    }
   
 backend "s3" {
     bucket = "remote-state-82s-dev"
